@@ -1,0 +1,125 @@
+* {
+	margin: 0;
+	padding: 0
+}
+body {
+	background: #FF6A6A;
+	height: 100%;
+	width: 100%;
+}
+.clickBox {
+	position: absolute;
+	height: 500px;
+	width: 500px;
+	margin: 0 auto;	/* border:1px black solid; */
+	top: 50%;
+	left: 50%;
+	margin-left: -250px;
+	margin-top: -250px;
+	border-radius: 100%;
+}
+.setting {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	display: flex;	/* justify-content: center; */
+
+	/* align-items:center; */
+	text-align: center;
+	flex-direction: column;
+}
+.heart {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -50px;
+	margin-top: -50px;
+	background: #BE1A25;
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.heart span {
+
+	/* display: inline-block; */
+	height: 30px;
+	font-family: "heart";
+	font-size: 20px;
+}
+nav {
+	position: absolute;
+	width: 100%;
+	height: 100%;				
+	/* background: rgba(255,255,255,0.2); */
+	transform: scale(0);
+	transition: all 2s  linear;
+
+}
+nav a {
+	text-decoration: none;
+	position: absolute;
+	height: 70px;
+	width: 70px;
+	/* border: 1px black solid; */
+	line-height: 30px;
+	text-align: center;
+	border-radius: 100px;
+	transform: translate(-50%, -50%);
+	transition: all 0.5s  linear;
+	transform-origin: 25% 25%
+}
+
+nav a:first-child{
+	background: url(../imageCircle/1.jpg) no-repeat;
+	background-size: 70px 70px;
+}
+
+
+nav a:nth-child(2){
+	background: url(../imageCircle/2.jpg) no-repeat;
+	background-size: 70px 70px;
+}
+
+nav a:nth-child(3){
+	background: url(../imageCircle/3.jpg) no-repeat;
+	background-size: 70px 70px;
+}
+
+
+nav a:nth-child(4){
+	background: url(../imageCircle/4.jpg) no-repeat;
+	background-size: 70px 70px;
+}
+
+
+.marry {
+	opacity: 0;	/* padding-top: 20px; */
+	font-family: "heart";
+	font-size: 20px;
+	transition: all 4s  linear;
+	z-index: 99999;
+	margin: 0 auto;
+    margin-top: 320px;
+}
+
+nav a:hover{
+	height: 140px;
+	width: 140px;
+	background-size: 140px 140px;
+}
+
+@keyframes heartChang{
+	0%{box-shadow: 0px 0px 0px 5px rgba(190,26,37,0.1);}
+	30%{box-shadow: 0px 0px 0px 7px rgba(190,26,37,0.3);}
+	50%{box-shadow: 0px 0px 0px 10px rgba(190,26,37,0.7);}
+	70%{box-shadow: 0px 0px 0px 7px rgba(190,26,37,0.3);}
+	90%{box-shadow: 0px 0px 0px 5px rgba(190,26,37,0.1);}
+	100%{box-shadow: 0px 0px 0px 0px rgba(190,26,37,0.0);}
+}
+
+.heart:hover{
+	animation: heartChang 3s linear;
+}
