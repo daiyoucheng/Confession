@@ -1,0 +1,18 @@
+.Heartbale td{
+	height: 60px;
+	width: 60px;
+	/* border: 1px green solid; */
+	text-align: center;
+}
+
+.Heartbale{
+	transform:rotate(-10deg);
+	/* border:1px green; */
+	z-index: 999999;
+	position: absolute;
+	margin:0 auto;
+	left: 49%;
+    top: 27%;
+}
+
+
