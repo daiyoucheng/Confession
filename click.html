@@ -24,7 +24,7 @@
 </head>
 <body>
 <audio autoplay="autopaly">
-  <source src="http://win.web.rd03.sycdn.kuwo.cn/e77c9ec36c0ed495ddff7fac0f657430/593d59bb/resource/a3/49/31/3163657469.aac" type="audio/mp3" />
+  <source src="renxi.mp3" type="audio/mp3" />
 </audio>
 <div id="main">
   <div id="error">本页面采用HTML5编辑，目前您的浏览器无法显示，请换成谷歌(<a href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html?hl=zh-CN&brand=CHMI">Chrome</a>)或者火狐(<a href="http://firefox.com.cn/download/">Firefox</a>)浏览器，或者其他游览器的最新版本。</div>
@@ -51,7 +51,7 @@
         <span class="say"> 第二个是再生再世和你在一起，</span><br>
         <span class="say"> </span><br>
 		<span class="say">第三个是永生永世和你不分离 </span><br>
-        <span class="say"><span class="space"></span> -- 爱你的小宇</span> </font>
+        <span class="say"><span class="space"></span> -- 爱你的小鱼</span> </font>
         <br />
         <br />
         </p>
@@ -131,6 +131,7 @@
                 canvas.removeClass('hand');
             }
         }).mousemove(function (e) {
+            debugger;
             var offset = canvas.offset(), x, y;
             x = e.pageX - offset.left;
             y = e.pageY - offset.top;
@@ -174,7 +175,7 @@
                 $await(Jscex.Async.sleep(10));
             }
             foot.draw();
-            tree.snapshot("p2", 500, 0, 610, 680);
+            tree.snapshot("p2", 500, 0, 610, 680);6
 
             // 会有闪烁不得意这样做, (＞﹏＜)
             canvas.parent().css("background", "url(" + tree.toDataURL('image/png') + ")");
@@ -200,7 +201,7 @@
             together.setMinutes(20);					//分钟
             together.setSeconds(0);					//秒前一位
             together.setMilliseconds(2);				//秒第二位
-
+            debugger;
             $("#code").show().typewriter();
             $("#clock-box").fadeIn(500);
             while (true) {

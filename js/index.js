@@ -3,7 +3,6 @@ var indexHtml =  {
 	clickMe:function(){
 
 		$("#heart").click(function(){
-			debugger;
 			if(indexHtml.count != 1){
 				return;
 			};
@@ -21,16 +20,13 @@ var indexHtml =  {
 		
 	},
 	xuanZhuan:function(){
-		debugger;
 		$("nav").css("transform","scale(1)")
 	      $("nav").css("transform","rotate(-180deg)");
 	      setTimeout(indexHtml.xuanZhuanPicture, 2000)
 	},
 	xuanZhuanPicture:function(){
-		debugger;
 		for(var i = 0;i < $("nav").children().length; i++){
        		   $("nav").children().eq(i).css("transform","rotateZ(-180deg)");
-
        		}
 	}
 }
@@ -38,5 +34,4 @@ var indexHtml =  {
 
 $(document).ready(function($) {
 	indexHtml.clickMe();
-
 });
